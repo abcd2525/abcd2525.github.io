@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>学修くじ</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new">
+</head>
+
+<body>
+  <header id="datetime"></header>
+  <main>
+    <div class="side-link">
+      <div class="side-item">
+        <a href="https://www.nnn.ed.nico/home" target="_blank" rel="noopener noreferrer">
+          <span class="link-text">ZEN Study を開く</span>
+          <span class="material-symbols-outlined">open_in_new</span>
+        </a>
+      </div>
+      <div class="side-item">
+        <a href="https://portal.zen.ac.jp/uprx/ShibbolethAuthServlet" target="_blank" rel="noopener noreferrer">
+          <span class="link-text">ZEN Portal を開く</span>
+          <span class="material-symbols-outlined">open_in_new</span>
+        </a>
+      </div>
+      <div class="side-item">
+        <a href="https://zen-student.slack.com/" target="_blank" rel="noopener noreferrer">
+          <span class="link-text">Slack を開く</span>
+          <span class="material-symbols-outlined">open_in_new</span>
+        </a>
+      </div>
+      <div class="side-item">
+        <a href="https://sites.google.com/zen.ac.jp/zen-gakuseibinran" target="_blank" rel="noopener noreferrer">
+          <span class="link-text">学生便覧 を開く</span>
+          <span class="material-symbols-outlined">open_in_new</span>
+        </a>
+      </div>
+    </div>
+    <div class="omikuji-container">
+      <div class="omikuji-img">
+        <img src="./kuji.png" alt="" height="200" width="200">
+      </div>
+      <div id="initial-message" class="initial-message">今日の学修予定をくじで決めよう！</div>
+      <div class="omikuji-result-wrapper" id="result-wrapper">
+        <div class="omikuji-text">今日は</div>
+        <div class="omikuji-result-line">
+          <div class="omikuji-display" id="omikuji-result"></div>
+          <div class="omikuji-text">を</div>
+          <div class="lucky-color" id="lucky-color"></div>
+        </div>
+        <div class="omikuji-text">学修しよう！</div>
+      </div>
+      <button class="omikuji-button" id="omikuji-button" onclick="drawOmikuji()">学修くじを引く</button>
+    </div>
+    <div class="side-info">
+      <div class="side-item-weather">
+        <div class="weather-text">今日の天気 (気象庁)</div>
+        <div id="weather"  class="weather"></div>
+        <div id="headline"></div>
+      </div>
+    </div>
+  </main>
+  <footer id="countdowns"></footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
